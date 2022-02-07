@@ -13,7 +13,6 @@ function closeNav() {
 
 function getImage(){
   // cors is disabled using an extention (CORS Unblock)
-  // the fetched image file is downlaoded under 'sources'
   const image_id = '1cXHh0iabxLEWV4a4R61IZiTOANDE02g7';
   const url =  'https://drive.google.com/uc?id='+ image_id;
   fetch(url).then(res => {
