@@ -1,0 +1,70 @@
+body{
+    background-color: #c5d5c5;
+    
+}
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e3e0cc;
+    overflow-x: hidden;
+    transition: 0.3s;
+    /* padding-top: 20px; */
+    /* margin: 10px 10px 10px 10px; */
+  }
+  
+  .sidenav a {
+    padding: 15px 0px 15px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9fa9a3;
+    display: block;
+    transition: 0.3s;
+    background-color: white;
+    margin: 15px 0 15px 0;
+  }
+
+  
+  .sidenav a:hover {
+    color: #c5d5c5;
+    font-size: 32px;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 0px 7px 0px 7px;
+    font-size: 25px;
+    color: white;
+    margin-right:5px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    cursor:pointer;
+    
+  }
+
+  #openNav{
+    font-size:35px; 
+    cursor:pointer;
+    margin-left : 20px;
+    margin-top: 20px;
+    color: white;
+  }
+
+  #myImage{
+      display: block;
+      margin: auto;
+      /* text-align: center; */
+      /* padding-left: 350px; */
+      width: 400px;
+      transition: 0.3s;
+      
+  }
