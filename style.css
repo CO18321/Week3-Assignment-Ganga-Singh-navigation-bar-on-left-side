@@ -5,7 +5,7 @@ body{
 
 .sidenav {
     height: 100%;
-    width: 0px;
+    width: 0vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -13,8 +13,6 @@ body{
     background-color: #e3e0cc;
     overflow-x: hidden;
     transition: 0.3s;
-    /* padding-top: 20px; */
-    /* margin: 10px 10px 10px 10px; */
   }
   
   .sidenav a {
@@ -39,12 +37,14 @@ body{
   .sidenav .closebtn {
     position: absolute;
     right: 0;
-    top: 10px;
-    padding: 0px 7px 0px 7px;
-    font-size: 25px;
+    top: 15px;
+    height: 2vw;
+    width: 2vw;
+    padding: 2px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2vw;
     color: white;
-    margin-right:5px;
-    margin-top: 10px;
     background-color: rgba(0,0,0,0.5);
     border-radius: 50%;
     cursor:pointer;
@@ -52,7 +52,7 @@ body{
   }
 
   #openNav{
-    font-size:35px; 
+    font-size:25px; 
     cursor:pointer;
     margin-left : 20px;
     margin-top: 20px;
@@ -62,9 +62,26 @@ body{
   #myImage{
       display: block;
       margin: auto;
-      /* text-align: center; */
-      /* padding-left: 350px; */
-      width: 400px;
+      width: 420px;
       transition: 0.3s;
       
   }
+
+  /*Change image Width when width of screen is less than or equal to 700px*/
+  @media screen and (max-width: 700px) {
+    #myImage{
+      width: 50vw;
+    }
+  }
+
+  /*Change font size when width of screen is less than or equal to 540px*/
+  @media screen and (max-width: 540px) {
+  .sidenav a {
+    font-size: 14px;
+  }
+
+  
+  .sidenav a:hover {
+    font-size: 16px;
+  }
+}
